@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "800018194449",
+    "firebase_url": "https://animaliapp-f70e4.firebaseio.com",
+    "project_id": "animaliapp-f70e4",
+    "storage_bucket": "animaliapp-f70e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800018194449:android:bad77b4d3808136d",
+        "android_client_info": {
+          "package_name": "com.ionicframework.animaliapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800018194449-2b7urhebmn5bl8086mt3j6r6j87g9vb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtNLeWHsviZnq_19C_wjXbaKjSZANI8SY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

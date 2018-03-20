@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title align="center" ><img height="50" src="assets/img/MasAmor2.png"/></ion-title>
+    <ion-buttons end>
+    <button ion-button icon-only (click)="login()">
+        <ion-icon name="add"></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg" color="seco">
+  <ion-list>
+  <ion-item>
+    <ion-label>Filtrar</ion-label>
+    <ion-select [(ngModel)]="species" (ionChange)="pickSpecies(species)">
+      <ion-option value="cat">Gatos</ion-option>
+      <ion-option value="dog">Perros</ion-option>
+      <ion-option value="bunny">Conejos</ion-option>
+      <ion-option value="">Todos</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+  <ion-item *ngFor="let pet of pets | async">
+    <ion-card>
+        <img src="assets/img/{{pet.name}}.jpg"/>
+        <ion-card-content>
+        <ion-card-title text-center>
+          {{pet.name}}
+        </ion-card-title>
+        <ion-row no-padding>
+          <ion-col>
+            <p>{{pet.age}}</p>
+          </ion-col>
+          <ion-col text-center>
+            <p>{{pet.breed}} </p>
+          </ion-col>
+          <ion-col text-right>
+            <p style= "font-size: 20px">
+            <ion-icon name="{{pet.sex}}"></ion-icon>
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+      <ion-row no-padding>
+        <ion-col text-center>
+          <button ion-button clear small icon-left color="primary" (click)="changePage(pet)">
+            <ion-icon name="add"></ion-icon>
+              Información
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-item>
+</ion-content>
