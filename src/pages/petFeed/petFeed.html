@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
 
-    <ion-title align="center" ><img height="50" src="assets/img/MasAmor2.png"/></ion-title>
+    <ion-title align="center" ><img height="50" src="assets/img/animaliapp.jpg"/></ion-title>
     <ion-buttons end>
     <button ion-button icon-only (click)="login()">
         <ion-icon name="add"></ion-icon>
@@ -33,15 +33,15 @@
           {{pet.name}}
         </ion-card-title>
         <ion-row no-padding>
-          <ion-col>
+          <ion-col text-left>
             <p>{{pet.age}}</p>
           </ion-col>
           <ion-col text-center>
             <p>{{pet.breed}} </p>
           </ion-col>
           <ion-col text-right>
-            <p style= "font-size: 20px">
-            <ion-icon name="{{pet.sex}}"></ion-icon>
+            <p>
+            {{pet.place}}
             </p>
           </ion-col>
         </ion-row>
